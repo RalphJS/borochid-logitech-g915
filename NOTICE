@@ -1,0 +1,15 @@
+borochid-logitech-g915
+Copyright 2026 Rodolfo Justiniano
+
+This repository is licensed under the Apache License 2.0 (see LICENSE),
+with one exception:
+
+* logitech.g915/images/g915.png is a drawing of the Logitech G915
+  LIGHTSPEED based on Logitech's product photography. It is NOT covered by
+  the Apache License. It is included only to identify the device in the
+  Borochid app and shows no Logitech logos. Logitech, G915 and LIGHTSPEED
+  are trademarks of Logitech. This project is not affiliated with or
+  endorsed by Logitech.
+
+If you are the rights holder and want the picture removed, open an issue
+and it will be replaced.
