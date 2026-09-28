@@ -1,0 +1,1629 @@
+{
+  "schema": 1,
+  "id": "logitech.g915",
+  "version": "0.1.0",
+  "name": "Logitech G915",
+  "category": "keyboard",
+  "image": "images/g915.png",
+  "display_name": [
+    {
+      "match": "USB Receiver",
+      "format": "Logitech G915 LIGHTSPEED"
+    },
+    {
+      "match": "G915 *",
+      "format": "Logitech G915 LIGHTSPEED"
+    }
+  ],
+  "match": [
+    {
+      "bus": "usb",
+      "vid": "0x046d",
+      "pid": "0xc541",
+      "connection": "wireless"
+    },
+    {
+      "bus": "usb",
+      "vid": "0x046d",
+      "pid": "0xc33e",
+      "connection": "cable"
+    },
+    {
+      "bus": "ble",
+      "service_uuid": "00010000-0000-1000-8000-011f2000046d",
+      "name_prefix": "G915",
+      "connection": "bluetooth"
+    }
+  ],
+  "channel": {
+    "type": "logitech-hidpp-broker"
+  },
+  "driver": {
+    "type": "logitech-hidpp-keyboard",
+    "version": ">=0.1,<1",
+    "provided_by": "borochid-driver-logitech-keyboard"
+  },
+  "input": {},
+  "battery": {
+    "level": "battery",
+    "charging": "charging"
+  },
+  "available": "online",
+  "hidpp_keyboard": {
+    "gkeys": [
+      {
+        "id": "g1",
+        "label": "G1",
+        "bit": 1
+      },
+      {
+        "id": "g2",
+        "label": "G2",
+        "bit": 2
+      },
+      {
+        "id": "g3",
+        "label": "G3",
+        "bit": 3
+      },
+      {
+        "id": "g4",
+        "label": "G4",
+        "bit": 4
+      },
+      {
+        "id": "g5",
+        "label": "G5",
+        "bit": 5
+      }
+    ],
+    "subprofiles": 3,
+    "game_mode_locked": [
+      227,
+      231
+    ],
+    "defaults": {
+      "report_rate": 1000,
+      "brightness": 100,
+      "game_mode_keys": [],
+      "bindings": {
+        "g1": "disabled",
+        "g2": "disabled",
+        "g3": "disabled",
+        "g4": "disabled",
+        "g5": "disabled"
+      },
+      "lighting": {
+        "mode": "per_key",
+        "color": "#00b4ff",
+        "speed": 5,
+        "keys": {}
+      }
+    }
+  },
+  "keyboard": {
+    "keys": [
+      {
+        "id": "logo",
+        "label": "Logo",
+        "x": 0,
+        "y": 0,
+        "h": 0.75,
+        "led": 210,
+        "cap": "G"
+      },
+      {
+        "id": "m1",
+        "label": "M1",
+        "x": 3.25,
+        "y": 0,
+        "h": 0.75
+      },
+      {
+        "id": "m2",
+        "label": "M2",
+        "x": 4.25,
+        "y": 0,
+        "h": 0.75
+      },
+      {
+        "id": "m3",
+        "label": "M3",
+        "x": 5.25,
+        "y": 0,
+        "h": 0.75
+      },
+      {
+        "id": "mr",
+        "label": "MR",
+        "x": 6.25,
+        "y": 0,
+        "h": 0.75
+      },
+      {
+        "id": "lightspeed",
+        "label": "LIGHTSPEED",
+        "x": 7.75,
+        "y": 0,
+        "h": 0.75,
+        "cap": "Wi"
+      },
+      {
+        "id": "bluetooth",
+        "label": "Bluetooth",
+        "x": 8.75,
+        "y": 0,
+        "h": 0.75,
+        "cap": "BT"
+      },
+      {
+        "id": "game_mode",
+        "label": "Game mode",
+        "x": 9.75,
+        "y": 0,
+        "h": 0.75,
+        "cap": "Game"
+      },
+      {
+        "id": "brightness",
+        "label": "Brightness",
+        "x": 10.75,
+        "y": 0,
+        "h": 0.75,
+        "led": 153,
+        "cap": "☀"
+      },
+      {
+        "id": "previous",
+        "label": "Previous",
+        "x": 19.75,
+        "y": 1,
+        "led": 158,
+        "cap": "⏮"
+      },
+      {
+        "id": "play_pause",
+        "label": "Play/Pause",
+        "x": 20.75,
+        "y": 1,
+        "led": 155,
+        "cap": "⏯"
+      },
+      {
+        "id": "next",
+        "label": "Next",
+        "x": 21.75,
+        "y": 1,
+        "led": 157,
+        "cap": "⏭"
+      },
+      {
+        "id": "mute",
+        "label": "Mute",
+        "x": 22.75,
+        "y": 1,
+        "led": 156,
+        "cap": "🔇"
+      },
+      {
+        "id": "esc",
+        "label": "Esc",
+        "x": 1.25,
+        "y": 1,
+        "usage": 41,
+        "led": 38
+      },
+      {
+        "id": "f1",
+        "label": "F1",
+        "x": 3.25,
+        "y": 1,
+        "usage": 58,
+        "led": 55
+      },
+      {
+        "id": "f2",
+        "label": "F2",
+        "x": 4.25,
+        "y": 1,
+        "usage": 59,
+        "led": 56
+      },
+      {
+        "id": "f3",
+        "label": "F3",
+        "x": 5.25,
+        "y": 1,
+        "usage": 60,
+        "led": 57
+      },
+      {
+        "id": "f4",
+        "label": "F4",
+        "x": 6.25,
+        "y": 1,
+        "usage": 61,
+        "led": 58
+      },
+      {
+        "id": "f5",
+        "label": "F5",
+        "x": 7.75,
+        "y": 1,
+        "usage": 62,
+        "led": 59
+      },
+      {
+        "id": "f6",
+        "label": "F6",
+        "x": 8.75,
+        "y": 1,
+        "usage": 63,
+        "led": 60
+      },
+      {
+        "id": "f7",
+        "label": "F7",
+        "x": 9.75,
+        "y": 1,
+        "usage": 64,
+        "led": 61
+      },
+      {
+        "id": "f8",
+        "label": "F8",
+        "x": 10.75,
+        "y": 1,
+        "usage": 65,
+        "led": 62
+      },
+      {
+        "id": "f9",
+        "label": "F9",
+        "x": 12.25,
+        "y": 1,
+        "usage": 66,
+        "led": 63
+      },
+      {
+        "id": "f10",
+        "label": "F10",
+        "x": 13.25,
+        "y": 1,
+        "usage": 67,
+        "led": 64
+      },
+      {
+        "id": "f11",
+        "label": "F11",
+        "x": 14.25,
+        "y": 1,
+        "usage": 68,
+        "led": 65
+      },
+      {
+        "id": "f12",
+        "label": "F12",
+        "x": 15.25,
+        "y": 1,
+        "usage": 69,
+        "led": 66
+      },
+      {
+        "id": "print_screen",
+        "label": "Print Screen",
+        "x": 16.5,
+        "y": 1,
+        "cap": "PrtSc",
+        "usage": 70,
+        "led": 67
+      },
+      {
+        "id": "scroll_lock",
+        "label": "Scroll Lock",
+        "x": 17.5,
+        "y": 1,
+        "cap": "ScrLk",
+        "usage": 71,
+        "led": 68
+      },
+      {
+        "id": "pause",
+        "label": "Pause",
+        "x": 18.5,
+        "y": 1,
+        "usage": 72,
+        "led": 69
+      },
+      {
+        "id": "g1",
+        "label": "G1",
+        "x": 0,
+        "y": 2.25,
+        "led": 180
+      },
+      {
+        "id": "g2",
+        "label": "G2",
+        "x": 0,
+        "y": 3.25,
+        "led": 181
+      },
+      {
+        "id": "g3",
+        "label": "G3",
+        "x": 0,
+        "y": 4.25,
+        "led": 182
+      },
+      {
+        "id": "g4",
+        "label": "G4",
+        "x": 0,
+        "y": 5.25,
+        "led": 183
+      },
+      {
+        "id": "g5",
+        "label": "G5",
+        "x": 0,
+        "y": 6.25,
+        "led": 184
+      },
+      {
+        "id": "grave",
+        "label": "`",
+        "x": 1.25,
+        "y": 2.25,
+        "usage": 53,
+        "led": 50
+      },
+      {
+        "id": "1",
+        "label": "1",
+        "x": 2.25,
+        "y": 2.25,
+        "usage": 30,
+        "led": 27
+      },
+      {
+        "id": "2",
+        "label": "2",
+        "x": 3.25,
+        "y": 2.25,
+        "usage": 31,
+        "led": 28
+      },
+      {
+        "id": "3",
+        "label": "3",
+        "x": 4.25,
+        "y": 2.25,
+        "usage": 32,
+        "led": 29
+      },
+      {
+        "id": "4",
+        "label": "4",
+        "x": 5.25,
+        "y": 2.25,
+        "usage": 33,
+        "led": 30
+      },
+      {
+        "id": "5",
+        "label": "5",
+        "x": 6.25,
+        "y": 2.25,
+        "usage": 34,
+        "led": 31
+      },
+      {
+        "id": "6",
+        "label": "6",
+        "x": 7.25,
+        "y": 2.25,
+        "usage": 35,
+        "led": 32
+      },
+      {
+        "id": "7",
+        "label": "7",
+        "x": 8.25,
+        "y": 2.25,
+        "usage": 36,
+        "led": 33
+      },
+      {
+        "id": "8",
+        "label": "8",
+        "x": 9.25,
+        "y": 2.25,
+        "usage": 37,
+        "led": 34
+      },
+      {
+        "id": "9",
+        "label": "9",
+        "x": 10.25,
+        "y": 2.25,
+        "usage": 38,
+        "led": 35
+      },
+      {
+        "id": "0",
+        "label": "0",
+        "x": 11.25,
+        "y": 2.25,
+        "usage": 39,
+        "led": 36
+      },
+      {
+        "id": "minus",
+        "label": "-",
+        "x": 12.25,
+        "y": 2.25,
+        "usage": 45,
+        "led": 42
+      },
+      {
+        "id": "equal",
+        "label": "=",
+        "x": 13.25,
+        "y": 2.25,
+        "usage": 46,
+        "led": 43
+      },
+      {
+        "id": "backspace",
+        "label": "Backspace",
+        "x": 14.25,
+        "y": 2.25,
+        "w": 2,
+        "cap": "⌫",
+        "usage": 42,
+        "led": 39
+      },
+      {
+        "id": "insert",
+        "label": "Insert",
+        "x": 16.5,
+        "y": 2.25,
+        "cap": "Ins",
+        "usage": 73,
+        "led": 70
+      },
+      {
+        "id": "home",
+        "label": "Home",
+        "x": 17.5,
+        "y": 2.25,
+        "usage": 74,
+        "led": 71
+      },
+      {
+        "id": "page_up",
+        "label": "Page Up",
+        "x": 18.5,
+        "y": 2.25,
+        "cap": "PgUp",
+        "usage": 75,
+        "led": 72
+      },
+      {
+        "id": "num_lock",
+        "label": "Num Lock",
+        "x": 19.75,
+        "y": 2.25,
+        "cap": "Num",
+        "usage": 83,
+        "led": 80
+      },
+      {
+        "id": "num_slash",
+        "label": "Num /",
+        "x": 20.75,
+        "y": 2.25,
+        "cap": "/",
+        "usage": 84,
+        "led": 81
+      },
+      {
+        "id": "num_asterisk",
+        "label": "Num *",
+        "x": 21.75,
+        "y": 2.25,
+        "cap": "*",
+        "usage": 85,
+        "led": 82
+      },
+      {
+        "id": "num_minus",
+        "label": "Num -",
+        "x": 22.75,
+        "y": 2.25,
+        "cap": "-",
+        "usage": 86,
+        "led": 83
+      },
+      {
+        "id": "tab",
+        "label": "Tab",
+        "x": 1.25,
+        "y": 3.25,
+        "w": 1.5,
+        "usage": 43,
+        "led": 40
+      },
+      {
+        "id": "q",
+        "label": "Q",
+        "x": 2.75,
+        "y": 3.25,
+        "usage": 20,
+        "led": 17
+      },
+      {
+        "id": "w",
+        "label": "W",
+        "x": 3.75,
+        "y": 3.25,
+        "usage": 26,
+        "led": 23
+      },
+      {
+        "id": "e",
+        "label": "E",
+        "x": 4.75,
+        "y": 3.25,
+        "usage": 8,
+        "led": 5
+      },
+      {
+        "id": "r",
+        "label": "R",
+        "x": 5.75,
+        "y": 3.25,
+        "usage": 21,
+        "led": 18
+      },
+      {
+        "id": "t",
+        "label": "T",
+        "x": 6.75,
+        "y": 3.25,
+        "usage": 23,
+        "led": 20
+      },
+      {
+        "id": "y",
+        "label": "Y",
+        "x": 7.75,
+        "y": 3.25,
+        "usage": 28,
+        "led": 25
+      },
+      {
+        "id": "u",
+        "label": "U",
+        "x": 8.75,
+        "y": 3.25,
+        "usage": 24,
+        "led": 21
+      },
+      {
+        "id": "i",
+        "label": "I",
+        "x": 9.75,
+        "y": 3.25,
+        "usage": 12,
+        "led": 9
+      },
+      {
+        "id": "o",
+        "label": "O",
+        "x": 10.75,
+        "y": 3.25,
+        "usage": 18,
+        "led": 15
+      },
+      {
+        "id": "p",
+        "label": "P",
+        "x": 11.75,
+        "y": 3.25,
+        "usage": 19,
+        "led": 16
+      },
+      {
+        "id": "lbracket",
+        "label": "[",
+        "x": 12.75,
+        "y": 3.25,
+        "usage": 47,
+        "led": 44
+      },
+      {
+        "id": "rbracket",
+        "label": "]",
+        "x": 13.75,
+        "y": 3.25,
+        "usage": 48,
+        "led": 45
+      },
+      {
+        "id": "backslash",
+        "label": "\\",
+        "x": 14.75,
+        "y": 3.25,
+        "w": 1.5,
+        "usage": 49,
+        "led": 46
+      },
+      {
+        "id": "delete",
+        "label": "Delete",
+        "x": 16.5,
+        "y": 3.25,
+        "cap": "Del",
+        "usage": 76,
+        "led": 73
+      },
+      {
+        "id": "end",
+        "label": "End",
+        "x": 17.5,
+        "y": 3.25,
+        "usage": 77,
+        "led": 74
+      },
+      {
+        "id": "page_down",
+        "label": "Page Down",
+        "x": 18.5,
+        "y": 3.25,
+        "cap": "PgDn",
+        "usage": 78,
+        "led": 75
+      },
+      {
+        "id": "num_7",
+        "label": "Num 7",
+        "x": 19.75,
+        "y": 3.25,
+        "cap": "7",
+        "usage": 95,
+        "led": 92
+      },
+      {
+        "id": "num_8",
+        "label": "Num 8",
+        "x": 20.75,
+        "y": 3.25,
+        "cap": "8",
+        "usage": 96,
+        "led": 93
+      },
+      {
+        "id": "num_9",
+        "label": "Num 9",
+        "x": 21.75,
+        "y": 3.25,
+        "cap": "9",
+        "usage": 97,
+        "led": 94
+      },
+      {
+        "id": "num_plus",
+        "label": "Num +",
+        "x": 22.75,
+        "y": 3.25,
+        "h": 2,
+        "cap": "+",
+        "usage": 87,
+        "led": 84
+      },
+      {
+        "id": "caps_lock",
+        "label": "Caps Lock",
+        "x": 1.25,
+        "y": 4.25,
+        "w": 1.75,
+        "cap": "Caps",
+        "usage": 57,
+        "led": 54
+      },
+      {
+        "id": "a",
+        "label": "A",
+        "x": 3.0,
+        "y": 4.25,
+        "usage": 4,
+        "led": 1
+      },
+      {
+        "id": "s",
+        "label": "S",
+        "x": 4.0,
+        "y": 4.25,
+        "usage": 22,
+        "led": 19
+      },
+      {
+        "id": "d",
+        "label": "D",
+        "x": 5.0,
+        "y": 4.25,
+        "usage": 7,
+        "led": 4
+      },
+      {
+        "id": "f",
+        "label": "F",
+        "x": 6.0,
+        "y": 4.25,
+        "usage": 9,
+        "led": 6
+      },
+      {
+        "id": "g",
+        "label": "G",
+        "x": 7.0,
+        "y": 4.25,
+        "usage": 10,
+        "led": 7
+      },
+      {
+        "id": "h",
+        "label": "H",
+        "x": 8.0,
+        "y": 4.25,
+        "usage": 11,
+        "led": 8
+      },
+      {
+        "id": "j",
+        "label": "J",
+        "x": 9.0,
+        "y": 4.25,
+        "usage": 13,
+        "led": 10
+      },
+      {
+        "id": "k",
+        "label": "K",
+        "x": 10.0,
+        "y": 4.25,
+        "usage": 14,
+        "led": 11
+      },
+      {
+        "id": "l",
+        "label": "L",
+        "x": 11.0,
+        "y": 4.25,
+        "usage": 15,
+        "led": 12
+      },
+      {
+        "id": "semicolon",
+        "label": ";",
+        "x": 12.0,
+        "y": 4.25,
+        "usage": 51,
+        "led": 48
+      },
+      {
+        "id": "quote",
+        "label": "'",
+        "x": 13.0,
+        "y": 4.25,
+        "usage": 52,
+        "led": 49
+      },
+      {
+        "id": "enter",
+        "label": "Enter",
+        "x": 14.0,
+        "y": 4.25,
+        "w": 2.25,
+        "cap": "Enter",
+        "usage": 40,
+        "led": 37
+      },
+      {
+        "id": "num_4",
+        "label": "Num 4",
+        "x": 19.75,
+        "y": 4.25,
+        "cap": "4",
+        "usage": 92,
+        "led": 89
+      },
+      {
+        "id": "num_5",
+        "label": "Num 5",
+        "x": 20.75,
+        "y": 4.25,
+        "cap": "5",
+        "usage": 93,
+        "led": 90
+      },
+      {
+        "id": "num_6",
+        "label": "Num 6",
+        "x": 21.75,
+        "y": 4.25,
+        "cap": "6",
+        "usage": 94,
+        "led": 91
+      },
+      {
+        "id": "left_shift",
+        "label": "Left Shift",
+        "x": 1.25,
+        "y": 5.25,
+        "w": 2.25,
+        "cap": "Shift",
+        "usage": 225,
+        "led": 105
+      },
+      {
+        "id": "z",
+        "label": "Z",
+        "x": 3.5,
+        "y": 5.25,
+        "usage": 29,
+        "led": 26
+      },
+      {
+        "id": "x",
+        "label": "X",
+        "x": 4.5,
+        "y": 5.25,
+        "usage": 27,
+        "led": 24
+      },
+      {
+        "id": "c",
+        "label": "C",
+        "x": 5.5,
+        "y": 5.25,
+        "usage": 6,
+        "led": 3
+      },
+      {
+        "id": "v",
+        "label": "V",
+        "x": 6.5,
+        "y": 5.25,
+        "usage": 25,
+        "led": 22
+      },
+      {
+        "id": "b",
+        "label": "B",
+        "x": 7.5,
+        "y": 5.25,
+        "usage": 5,
+        "led": 2
+      },
+      {
+        "id": "n",
+        "label": "N",
+        "x": 8.5,
+        "y": 5.25,
+        "usage": 17,
+        "led": 14
+      },
+      {
+        "id": "m",
+        "label": "M",
+        "x": 9.5,
+        "y": 5.25,
+        "usage": 16,
+        "led": 13
+      },
+      {
+        "id": "comma",
+        "label": ",",
+        "x": 10.5,
+        "y": 5.25,
+        "usage": 54,
+        "led": 51
+      },
+      {
+        "id": "dot",
+        "label": ".",
+        "x": 11.5,
+        "y": 5.25,
+        "usage": 55,
+        "led": 52
+      },
+      {
+        "id": "slash",
+        "label": "/",
+        "x": 12.5,
+        "y": 5.25,
+        "usage": 56,
+        "led": 53
+      },
+      {
+        "id": "right_shift",
+        "label": "Right Shift",
+        "x": 13.5,
+        "y": 5.25,
+        "w": 2.75,
+        "cap": "Shift",
+        "usage": 229,
+        "led": 109
+      },
+      {
+        "id": "up",
+        "label": "Up",
+        "x": 17.5,
+        "y": 5.25,
+        "cap": "↑",
+        "usage": 82,
+        "led": 79
+      },
+      {
+        "id": "num_1",
+        "label": "Num 1",
+        "x": 19.75,
+        "y": 5.25,
+        "cap": "1",
+        "usage": 89,
+        "led": 86
+      },
+      {
+        "id": "num_2",
+        "label": "Num 2",
+        "x": 20.75,
+        "y": 5.25,
+        "cap": "2",
+        "usage": 90,
+        "led": 87
+      },
+      {
+        "id": "num_3",
+        "label": "Num 3",
+        "x": 21.75,
+        "y": 5.25,
+        "cap": "3",
+        "usage": 91,
+        "led": 88
+      },
+      {
+        "id": "num_enter",
+        "label": "Num Enter",
+        "x": 22.75,
+        "y": 5.25,
+        "h": 2,
+        "cap": "Enter",
+        "usage": 88,
+        "led": 85
+      },
+      {
+        "id": "left_ctrl",
+        "label": "Left Ctrl",
+        "x": 1.25,
+        "y": 6.25,
+        "w": 1.25,
+        "cap": "Ctrl",
+        "usage": 224,
+        "led": 104
+      },
+      {
+        "id": "left_super",
+        "label": "Left Super",
+        "x": 2.5,
+        "y": 6.25,
+        "w": 1.25,
+        "cap": "Super",
+        "usage": 227,
+        "led": 107
+      },
+      {
+        "id": "left_alt",
+        "label": "Left Alt",
+        "x": 3.75,
+        "y": 6.25,
+        "w": 1.25,
+        "cap": "Alt",
+        "usage": 226,
+        "led": 106
+      },
+      {
+        "id": "space",
+        "label": "Space",
+        "x": 5.0,
+        "y": 6.25,
+        "w": 6.25,
+        "cap": "",
+        "usage": 44,
+        "led": 41
+      },
+      {
+        "id": "right_alt",
+        "label": "Right Alt",
+        "x": 11.25,
+        "y": 6.25,
+        "w": 1.25,
+        "cap": "Alt",
+        "usage": 230,
+        "led": 110
+      },
+      {
+        "id": "right_super",
+        "label": "Right Super",
+        "x": 12.5,
+        "y": 6.25,
+        "w": 1.25,
+        "cap": "Super",
+        "usage": 231,
+        "led": 111
+      },
+      {
+        "id": "menu",
+        "label": "Menu",
+        "x": 13.75,
+        "y": 6.25,
+        "w": 1.25,
+        "usage": 101,
+        "led": 98
+      },
+      {
+        "id": "right_ctrl",
+        "label": "Right Ctrl",
+        "x": 15.0,
+        "y": 6.25,
+        "w": 1.25,
+        "cap": "Ctrl",
+        "usage": 228,
+        "led": 108
+      },
+      {
+        "id": "left",
+        "label": "Left",
+        "x": 16.5,
+        "y": 6.25,
+        "cap": "←",
+        "usage": 80,
+        "led": 77
+      },
+      {
+        "id": "down",
+        "label": "Down",
+        "x": 17.5,
+        "y": 6.25,
+        "cap": "↓",
+        "usage": 81,
+        "led": 78
+      },
+      {
+        "id": "right",
+        "label": "Right",
+        "x": 18.5,
+        "y": 6.25,
+        "cap": "→",
+        "usage": 79,
+        "led": 76
+      },
+      {
+        "id": "num_0",
+        "label": "Num 0",
+        "x": 19.75,
+        "y": 6.25,
+        "w": 2,
+        "cap": "0",
+        "usage": 98,
+        "led": 95
+      },
+      {
+        "id": "num_dot",
+        "label": "Num .",
+        "x": 21.75,
+        "y": 6.25,
+        "cap": ".",
+        "usage": 99,
+        "led": 96
+      }
+    ]
+  },
+  "ui": [
+    {
+      "widget": "readout",
+      "state": "profile",
+      "section": "header",
+      "tooltip": "The profile (switch profiles at the top right)"
+    },
+    {
+      "widget": "select",
+      "label": "·",
+      "state": "subprofile",
+      "action": "select_subprofile",
+      "param": "value",
+      "options": [
+        {
+          "value": 1,
+          "label": "M1"
+        },
+        {
+          "value": 2,
+          "label": "M2"
+        },
+        {
+          "value": 3,
+          "label": "M3"
+        }
+      ],
+      "tooltip": "M1-M3 switch the G-keys and lighting within the profile",
+      "section": "header",
+      "visible_if": "!x_mode"
+    },
+    {
+      "widget": "readout",
+      "label": "·",
+      "state": "x_mode",
+      "section": "header",
+      "visible_if": "x_mode",
+      "map": {
+        "true": "X mode",
+        "false": "",
+        "null": ""
+      },
+      "tooltip": "X mode: no subprofiles; M1-M3 and MR are macro keys (see Advanced)"
+    },
+    {
+      "widget": "readout",
+      "label": "Report rate",
+      "state": "report_rate",
+      "suffix": " Hz"
+    },
+    {
+      "widget": "group",
+      "label": "Lighting",
+      "icon": [
+        "brightness-high",
+        "display-brightness-symbolic",
+        "preferences-desktop-color"
+      ],
+      "tooltip": "Lighting of the active subprofile",
+      "children": [
+        {
+          "widget": "select",
+          "label": "Effect",
+          "state": "lighting.mode",
+          "action": "set_lighting_mode",
+          "param": "value",
+          "options": [
+            {
+              "value": "per_key",
+              "label": "Per-key colours"
+            },
+            {
+              "value": "breathe",
+              "label": "Breathing"
+            },
+            {
+              "value": "cycle",
+              "label": "Colour cycle"
+            },
+            {
+              "value": "wave",
+              "label": "Colour wave"
+            },
+            {
+              "value": "ripple",
+              "label": "Ripple"
+            },
+            {
+              "value": "off",
+              "label": "Off"
+            }
+          ]
+        },
+        {
+          "widget": "color",
+          "label": "Colour",
+          "state": "lighting.color",
+          "action": "set_lighting_color",
+          "param": "value",
+          "enabled_if": "lighting.uses_color",
+          "tooltip": "Every key's colour, unless painted below"
+        },
+        {
+          "widget": "slider",
+          "label": "Speed",
+          "state": "lighting.speed",
+          "action": "set_lighting_speed",
+          "param": "value",
+          "min": 1,
+          "max": 10,
+          "enabled_if": "lighting.uses_speed"
+        },
+        {
+          "widget": "row",
+          "label": "M lights",
+          "visible_if": "x_mode",
+          "tooltip": "Which of M1-M3 and MR are lit in X mode (their lights are white)",
+          "children": [
+            {
+              "widget": "toggle",
+              "label": "M1",
+              "state": "x_light.m1",
+              "action": "set_x_light",
+              "param": "value",
+              "params": {
+                "key": "m1"
+              }
+            },
+            {
+              "widget": "toggle",
+              "label": "M2",
+              "state": "x_light.m2",
+              "action": "set_x_light",
+              "param": "value",
+              "params": {
+                "key": "m2"
+              }
+            },
+            {
+              "widget": "toggle",
+              "label": "M3",
+              "state": "x_light.m3",
+              "action": "set_x_light",
+              "param": "value",
+              "params": {
+                "key": "m3"
+              }
+            },
+            {
+              "widget": "toggle",
+              "label": "MR",
+              "state": "x_light.mr",
+              "action": "set_x_light",
+              "param": "value",
+              "params": {
+                "key": "mr"
+              }
+            }
+          ]
+        },
+        {
+          "widget": "keyboard",
+          "label": "",
+          "layout": "keyboard",
+          "mode": "paint",
+          "state": "lighting.keys",
+          "base": "lighting.color",
+          "action": "set_key_colors",
+          "clear": "clear_key_colors",
+          "enabled_if": "lighting.per_key",
+          "tooltip": "Pick a colour, then click or drag across keys"
+        }
+      ]
+    },
+    {
+      "widget": "group",
+      "label": "G-keys",
+      "icon": [
+        "configure-shortcuts",
+        "configure-shortcuts-symbolic",
+        "input-keyboard"
+      ],
+      "tooltip": "What G1-G5 (and M1-M3, MR in X mode) do",
+      "children": [
+        {
+          "widget": "buttons",
+          "label": "",
+          "action": "set_binding",
+          "reset": "reset_binding",
+          "buttons": [
+            {
+              "id": "g1",
+              "label": "G1"
+            },
+            {
+              "id": "g2",
+              "label": "G2"
+            },
+            {
+              "id": "g3",
+              "label": "G3"
+            },
+            {
+              "id": "g4",
+              "label": "G4"
+            },
+            {
+              "id": "g5",
+              "label": "G5"
+            }
+          ],
+          "categories": [
+            {
+              "label": "Shortcut",
+              "icon": [
+                "input-keyboard",
+                "input-keyboard-symbolic"
+              ],
+              "kind": "keys"
+            },
+            {
+              "label": "Scroll",
+              "icon": [
+                "transform-move-vertical",
+                "go-up",
+                "object-flip-vertical"
+              ],
+              "options": [
+                {
+                  "value": {
+                    "wheel": 1
+                  },
+                  "label": "Scroll up"
+                },
+                {
+                  "value": {
+                    "wheel": -1
+                  },
+                  "label": "Scroll down"
+                },
+                {
+                  "value": {
+                    "hwheel": -1
+                  },
+                  "label": "Scroll left"
+                },
+                {
+                  "value": {
+                    "hwheel": 1
+                  },
+                  "label": "Scroll right"
+                }
+              ]
+            },
+            {
+              "label": "Nothing",
+              "icon": [
+                "action-unavailable",
+                "dialog-cancel"
+              ],
+              "options": [
+                {
+                  "value": "disabled",
+                  "label": "Do nothing"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "widget": "buttons",
+          "label": "",
+          "action": "set_binding",
+          "reset": "reset_binding",
+          "buttons": [
+            {
+              "id": "m1",
+              "label": "M1"
+            },
+            {
+              "id": "m2",
+              "label": "M2"
+            },
+            {
+              "id": "m3",
+              "label": "M3"
+            },
+            {
+              "id": "mr",
+              "label": "MR"
+            }
+          ],
+          "categories": [
+            {
+              "label": "Shortcut",
+              "icon": [
+                "input-keyboard",
+                "input-keyboard-symbolic"
+              ],
+              "kind": "keys"
+            },
+            {
+              "label": "Scroll",
+              "icon": [
+                "transform-move-vertical",
+                "go-up",
+                "object-flip-vertical"
+              ],
+              "options": [
+                {
+                  "value": {
+                    "wheel": 1
+                  },
+                  "label": "Scroll up"
+                },
+                {
+                  "value": {
+                    "wheel": -1
+                  },
+                  "label": "Scroll down"
+                },
+                {
+                  "value": {
+                    "hwheel": -1
+                  },
+                  "label": "Scroll left"
+                },
+                {
+                  "value": {
+                    "hwheel": 1
+                  },
+                  "label": "Scroll right"
+                }
+              ]
+            },
+            {
+              "label": "Nothing",
+              "icon": [
+                "action-unavailable",
+                "dialog-cancel"
+              ],
+              "options": [
+                {
+                  "value": "disabled",
+                  "label": "Do nothing"
+                }
+              ]
+            }
+          ],
+          "visible_if": "x_mode"
+        },
+        {
+          "widget": "readout",
+          "label": "Shortcuts",
+          "state": "input_error",
+          "map": {
+            "null": "Ready"
+          },
+          "tooltip": "Shortcuts on G-keys need the virtual input device"
+        },
+        {
+          "widget": "keyboard",
+          "label": "",
+          "layout": "keyboard",
+          "mode": "pick",
+          "keys": [
+            "g1",
+            "g2",
+            "g3",
+            "g4",
+            "g5"
+          ],
+          "opens": "set_binding",
+          "tooltip": "Click a G-key to change what it does",
+          "keys_when": {
+            "x_mode": [
+              "m1",
+              "m2",
+              "m3",
+              "mr"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "widget": "group",
+      "label": "Game mode",
+      "icon": [
+        "crosshairs",
+        "crosshairs-symbolic",
+        "applications-games"
+      ],
+      "tooltip": "Keys the game mode key disables (per profile). The keyboard always disables Super.",
+      "children": [
+        {
+          "widget": "keyboard",
+          "label": "",
+          "layout": "keyboard",
+          "mode": "toggle",
+          "state": "game_mode_keys",
+          "action": "set_game_mode_keys",
+          "param": "keys",
+          "locked": [
+            227,
+            231
+          ],
+          "tooltip": "Click keys to disable them while game mode is on"
+        }
+      ]
+    },
+    {
+      "widget": "group",
+      "label": "Advanced",
+      "icon": [
+        "configure",
+        "settings-configure",
+        "preferences-other"
+      ],
+      "tooltip": "Settings of the active profile you rarely need to change",
+      "children": [
+        {
+          "widget": "slider",
+          "label": "Brightness",
+          "state": "brightness",
+          "action": "set_brightness",
+          "param": "value",
+          "min": 0,
+          "max": 100,
+          "icon": [
+            "brightness-high",
+            "display-brightness-symbolic"
+          ],
+          "tooltip": "The brightness key on the keyboard changes this too"
+        },
+        {
+          "widget": "select",
+          "label": "Report rate",
+          "state": "report_rate",
+          "action": "set_report_rate",
+          "param": "value",
+          "options": [
+            {
+              "value": 1000,
+              "label": "1000 Hz"
+            },
+            {
+              "value": 500,
+              "label": "500 Hz"
+            },
+            {
+              "value": 250,
+              "label": "250 Hz"
+            },
+            {
+              "value": 125,
+              "label": "125 Hz"
+            }
+          ],
+          "enabled_if": "report_rate_available",
+          "tooltip": "How often the keyboard reports (over Bluetooth the connection decides)"
+        },
+        {
+          "widget": "toggle",
+          "label": "X mode",
+          "state": "x_mode",
+          "action": "set_x_mode",
+          "param": "value",
+          "tooltip": "No subprofiles: M1's lighting and G-keys apply, and M1-M3 and MR become macro keys (set them under G-keys)"
+        },
+        {
+          "widget": "toggle",
+          "label": "Num Lock light",
+          "state": "numlock_light",
+          "action": "set_numlock_light",
+          "param": "value",
+          "enabled_if": "lighting.per_key",
+          "tooltip": "The Num Lock key is lit only while Num Lock is on (per-key colours only)"
+        },
+        {
+          "widget": "keyboard",
+          "label": "",
+          "layout": "keyboard",
+          "mode": "preview",
+          "state": "lighting.keys",
+          "base": "lighting.color",
+          "brightness": "brightness",
+          "tooltip": "The keyboard's lighting as it is now"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "state": "status"
+  }
+}
